@@ -8,4 +8,13 @@ body{
 
 #textArea{
 	margin-top: 20%;
+	border-radius: 10px;
+	
+}
+
+#button{
+	border:1px solid #CED5D7;
+	border-radius: 5px;
+	background: #cfe6ef;
+
 }
