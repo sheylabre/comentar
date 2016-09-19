@@ -1,4 +1,11 @@
 body{
 	text-align: center;
-	background-image: url(nr.jpg);
+	background-image: url(iron.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+
+}
+
+#textArea{
+	margin-top: 20%;
 }
