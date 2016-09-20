@@ -1,20 +1,31 @@
 body{
 	text-align: center;
-	background-image: url(iron.jpg);
+	background-color: #1DA1F2;
 	background-repeat: no-repeat;
 	background-size: 100%;
 
 }
 
-#textArea{
-	margin-top: 20%;
+#text{
+	margin-top: 5%;
 	border-radius: 10px;
 	
 }
 
 #button{
-	border:1px solid #CED5D7;
 	border-radius: 5px;
-	background: #cfe6ef;
-
+	background: #2E2E2E;
+	font-size: 16px;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: 32%;
+}
+.gris{
+	background-color: #E5E5E5;
+	width: 55%;
+	margin: 10% 23% 2%;
+	border-radius: 15px;
 }

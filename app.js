@@ -1,13 +1,19 @@
-window.addEventListener("load", function() {
-	var boton=document.getElementById("button");
-	var textArea="";
-	boton.addEventListener("click",function(){
-		textArea= document.getElementById("textArea").value;
-   		var nuevoP = document.createElement("p");
-    	var textNode = document.createTextNode(textArea);
-    	nuevoP.appendChild(textNode);
-    	var contenedor = document.getElementById("contenedor");
-    	contenedor.insertBefore(nuevoP, contenedor.childNodes[0]);
-	});
-
+window.addEventListener ("load", function(){
+   var boton = document.getElementById ("button");
+   boton.addEventListener("click", function(e)    {
+      e.preventDefault();
+      var textArea = document.getElementById("text").value;
+      var newItem = document.createElement("div");
+      newItem.innerText = textArea;
+      var contenedor = document.getElementById("contenedor");
+      contenedor.insertBefore(newItem,contenedor.childNodes[0]);
+      textArea.value = "";
+   });
+    
+    function agregaMensaje () {
+var div = document.createElement("div");
+div.innerText = texto;
+var mensajes = document.getElementById("mensajes");
+mensajes.inserBefore(div, mensajes.childNodes[0]);
+}
 });
