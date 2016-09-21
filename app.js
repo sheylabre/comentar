@@ -10,10 +10,24 @@ window.addEventListener ("load", function(){
       textArea.value = "";
    });
     
-    function agregaMensaje () {
-var div = document.createElement("div");
-div.innerText = texto;
-var mensajes = document.getElementById("mensajes");
-mensajes.inserBefore(div, mensajes.childNodes[0]);
-}
+        function agregaMensaje () {
+    var div = document.createElement("div");
+    div.innerText = texto;
+    var mensajes = document.getElementById("mensajes");
+    mensajes.inserBefore(div, mensajes.childNodes[0]);
+    }
 });
+// versión 0.0.2
+
+//Para que agrande la barra de texarea
+var textarea = document.querySelector('textarea');
+
+textarea.addEventListener('keydown', function(){
+    autosize();
+});
+             
+function autosize(){
+    textarea.style.cssText = 'height:auto; padding:0';
+    textarea.style.cssText = 'height:' + textarea.scrollHeight + 'px';
+}
+
