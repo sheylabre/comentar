@@ -43,14 +43,13 @@ window.addEventListener ("load", function(){
             }
         });
 // version 0.0.4
-   function expandirTextArea(tecla) {
-         var textArea= document.getElementById("textArea");
-         if (tecla == 13) {     
-             textArea.rows += 1;     
-         }else if(tecla == 8){
-             textArea.rows -= 1; 
-         }if(textArea.rows < 5){
-             textArea.rows = 4;
+   function expandirTextArea(tec) {
+         if (tec == 13) {     
+             text.rows += 1;     
+         }else if(tec == 8){
+             text.rows -= 1; 
+         }if(text.rows < 3){
+             text.rows = 2;
          }
     }
 
