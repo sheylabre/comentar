@@ -22,8 +22,6 @@ window.addEventListener ("load", function(){
     text.addEventListener("keyup",function(e){
         button.disabled = false;
         var tec = e.keyCode;
-        expandirTextArea (tec);
-        validarContenedor(text);
         var limite = 140;
         var longitud = document.getElementById("text").value.length;
         var contador =  document.getElementById("cont")
@@ -33,9 +31,9 @@ window.addEventListener ("load", function(){
             }else if(longitud>limite){
                  button.disabled = true;
             }else if(longitud>120){
-                 contador.classList.add("orange");
+                 contador.classList.add("blue");
             }else{
-                 contador.classList.remove("orange");
+                 contador.classList.remove("blue");
             
             }if(longitud>130){
                  contador.classList.add("rojo");
