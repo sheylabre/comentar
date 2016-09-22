@@ -19,6 +19,32 @@ window.addEventListener ("load", function(){
 });
 // versión 0.0.2
 
+    text.addEventListener("keyup",function(e){
+        button.disabled = false;
+        var tec = e.keyCode;
+        expandirTextArea (tec);
+        validarContenedor(text);
+        var limite = 140;
+        var longitud = document.getElementById("text").value.length;
+        var contador =  document.getElementById("cont")
+        contador.innerText = limite-longitud;
+            if( longitud == 0 ){
+                 button.disabled = true;
+            }else if(longitud>limite){
+                 button.disabled = true;
+            }else if(longitud>120){
+                 contador.classList.add("orange");
+            }else{
+                 contador.classList.remove("orange");
+            
+            }if(longitud>130){
+                 contador.classList.add("rojo");
+            }
+            else{
+                 contador.classList.remove("rojo");
+            }
+        });
+
 //Para que agrande la barra de texarea
 var textarea = document.querySelector('textarea');
 
@@ -30,4 +56,32 @@ function autosize(){
     textarea.style.cssText = 'height:auto; padding:0';
     textarea.style.cssText = 'height:' + textarea.scrollHeight + 'px';
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
